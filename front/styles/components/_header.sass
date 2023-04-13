@@ -1,0 +1,185 @@
+.header
+    background: $red
+    padding: 28px 0
+    &-row
+        align-items: center
+        position: relative
+    &-logo
+        cursor: pointer
+        &__title
+            font-size: 24.79px
+            color: #fff
+            text-decoration: none
+            @media (max-width: 992px)
+                font-size: 18px
+            @media (max-width: 567px)
+                font-size: 14px 
+            &--bold
+                font-weight: bold
+    &-nav
+        display: flex
+        justify-content: space-between
+        max-width: 502px
+        @media (max-width: 767px)
+            position: fixed
+            background: #000
+            left: 0
+            right: 0
+            top: 78px
+            height: calc(100vh - 77px)
+            max-width: unset
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            display: none
+        &--visible
+            display: flex
+            z-index: 3
+        &__item
+            font-size: 14.74px
+            text-decoration: none
+            color: #fff
+            text-transform: uppercase
+            cursor: pointer
+            @media (max-width: 992px)
+                font-size: 12px
+            & + .header-nav__item
+                @media (max-width: 767px)
+                    margin-top: 20px
+    &-basket
+        position: relative
+        &__count
+            position: absolute
+            top: -5px
+            background-color: #fff
+            font-size: 14.5px
+            width: 18px
+            height: 18px
+            text-align: center
+            left: 11px
+            color: #0d6efd
+
+    &-search
+        // max-width: 167px
+        overflow: hidden
+        @media (max-width: 567px)
+            margin: 0 auto
+        &__label
+            display: flex
+            align-items: center
+            &::before
+                content: url('/static/images/search-icon.png')
+                margin-right: 10px
+        &__input
+            background: transparent
+            border: none
+            border-bottom: 1px solid #fff
+            outline: none
+            color: #fff
+            width: 100%
+            margin-top: -5px
+    &-user
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        @media (max-width: 567px)
+            margin-left: auto
+        &__item + .header-user__item
+                margin-left: 15px
+                // @media (max-width: 567px)
+                //     margin-left: 8px
+        &__image
+            vertical-align: middle
+    &-burger
+        display: none
+        flex-shrink: 0
+        @media (max-width: 767px)
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 20px
+            height: 18px
+        &__item
+            width: 100%
+            height: 2px
+            background: #fff
+
+.search-form 
+    // position: relative
+    &-label
+        display: flex
+        align-items: center
+        gap: 10px
+        &::before
+            content: ''
+            display: inline-block
+            width: 15px
+            height: 15px
+            background: no-repeat center/100% url('/images/search-icon.png')
+    &-input
+        all: unset
+        border-bottom: 1px solid #fff
+        color: #fff
+        width: 100%
+        // padding: 5px
+    &-list
+        position: absolute
+        top: 40px
+        left: 50%
+        transform: translateX(-50%)
+        right: 0
+        list-style-type: none
+        z-index: 5
+        min-width: 320px
+        max-width: 450px
+        &-item
+            background-color: #fff
+        &-link
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 20px
+            text-decoration: none
+            color: #000
+        &-image
+            width: 40px
+            height: 40px
+            object-fit: cover
+        &-container
+            display: flex
+            align-items: center
+            justify-content: space-between
+            gap: 10px
+            height: 40px
+        &-price
+            color: $red
+
+.tns-controls
+    display: none !important
+
+.header-search-items 
+    position: absolute
+    background: #fff
+    z-index: 3
+    list-style: none
+    min-width: 300px
+    left: 50%
+    transform: translateX(-50%)
+    top: 56px
+    padding: 10px
+    margin: 0
+    @media (min-width: 576px)
+        width: 450px
+
+.header-search-item
+    padding: 10px
+    cursor: pointer
+
+.search-item-image
+    width: 45px
+    height: 45px
+    object-fit: cover
+    margin-right: 10px
+
+.navbar-visible
+    overflow-y: hidden

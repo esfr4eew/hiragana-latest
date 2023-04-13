@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_order_item_orders",
+  "info": {
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "shop_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shop-item.shop-item"
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

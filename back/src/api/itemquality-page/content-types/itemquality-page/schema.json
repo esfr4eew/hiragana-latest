@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "itemquality_pages",
+  "info": {
+    "singularName": "itemquality-page",
+    "pluralName": "itemquality-pages",
+    "displayName": "ItemqualityPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "itemqualityTitle": {
+      "type": "string",
+      "required": true
+    },
+    "contactLink": {
+      "type": "string",
+      "required": true
+    },
+    "imageRight": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageDown": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colored-description.cccc",
+      "required": true
+    }
+  }
+}

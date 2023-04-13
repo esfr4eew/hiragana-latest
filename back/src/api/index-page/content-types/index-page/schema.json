@@ -1,0 +1,94 @@
+{
+  "kind": "singleType",
+  "collectionName": "index_pages",
+  "info": {
+    "singularName": "index-page",
+    "pluralName": "index-pages",
+    "displayName": "IndexPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TopBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "index-page.top-banner",
+      "required": true
+    },
+    "HeaderLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "index-page.header-links"
+    },
+    "headerTitle": {
+      "type": "string",
+      "default": "HIRAGANA.STYLE",
+      "required": true
+    },
+    "exclusiveTitle": {
+      "type": "string",
+      "required": true,
+      "default": "A STREET WEAR NEVER GOES OUT OF STYLE. BE EXCLUSIVE."
+    },
+    "ExclusiveImages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "index-page.excluse"
+    },
+    "trendingTitle": {
+      "type": "string",
+      "default": "TRENDING STICKERS",
+      "required": true
+    },
+    "TrendingItems": {
+      "type": "component",
+      "repeatable": false,
+      "component": "index-page.trending",
+      "required": true
+    },
+    "categoriesTitle": {
+      "type": "string",
+      "default": "SHOP BY CATEGORY",
+      "required": true
+    },
+    "CategoriesItems": {
+      "type": "component",
+      "repeatable": false,
+      "component": "index-page.categories",
+      "required": true
+    },
+    "instagramTitle": {
+      "type": "string",
+      "default": "Follow @HIRAGANAstyle on Instagram",
+      "required": true
+    },
+    "InstagramItems": {
+      "type": "component",
+      "repeatable": false,
+      "component": "index-page.instagram",
+      "required": true
+    },
+    "reviewsTitle": {
+      "type": "string",
+      "default": "LAST REVIEWS",
+      "required": true
+    },
+    "ReviewList": {
+      "displayName": "Reviews",
+      "type": "component",
+      "repeatable": false,
+      "component": "index-page.reviews",
+      "required": true
+    },
+    "Footer": {
+      "displayName": "Footer",
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.footer",
+      "required": true
+    }
+  }
+}

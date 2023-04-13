@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_footer_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "footerTitle": {
+      "type": "string",
+      "required": true
+    },
+    "titleDescription": {
+      "type": "string",
+      "required": true
+    },
+    "pinterestLink": {
+      "type": "string",
+      "required": false
+    },
+    "instagramLink": {
+      "type": "string",
+      "required": true
+    },
+    "navigationLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "index-page.header-links",
+      "required": true
+    },
+    "aboutDescription": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

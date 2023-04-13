@@ -1,0 +1,113 @@
+.moneyback
+    // background: url("../images/moneyback-bg-1.jpg") top left 100%/50% 100% no-repeat #efefef
+    position: relative
+    // @media (max-width: 768px)
+    //     background: #efefef !important
+    &-rightbg
+        padding-bottom: 50%
+        @media (max-width: 768px)
+            display: none
+    &-info
+        // padding-top: 123px
+        // padding-bottom: 112px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-transform: uppercase
+        padding-left: 20px
+        padding-right: 20px
+        // max-width: 445px
+        @media (max-width: 992px)
+            padding-top: 90px
+            padding-bottom: 90px
+            // max-width: 300px
+        @media (max-width: 768px)
+            padding-top: 45px
+            padding-bottom: 45px
+            // max-width: 100%
+        // @media (max-width: 567px)
+        //     max-width: unset
+        &__title
+            font-size: 23.14px
+            font-weight: 500
+            margin-bottom: 30px
+            line-height: 1
+            @media (max-width: 768px)
+                font-size: 18px
+                margin-bottom: 15px
+        &__divider
+            display: block
+            width: 40px
+            height: 1px
+            background-color: #d4d4d4
+            margin-bottom: 30px
+            @media (max-width: 768px)
+                margin-bottom: 15px
+        &__question
+            font-size: 14px
+            color: $red
+            margin-bottom: 28px
+            @media (max-width: 768px)
+                margin-bottom: 14px
+        &__answer
+            font-size: 14px
+            font-weight: 500
+            margin-bottom: 25px
+
+.thanks
+    // background: url('../images/moneyback-bg-2.jpg') top left/100% 100% no-repeat
+    padding-top: 20%
+    padding-bottom: 25%
+    @media (max-width: 567px)
+        padding-top: 50px
+        padding-bottom: 60px
+    &__title
+        font-size: 44.96px
+        font-weight: 900
+        text-transform: uppercase
+        color: #fff
+        max-width: 462px
+        margin: 0 auto 28px
+        text-align: center
+        @media (max-width: 992px)
+            font-size: 30px
+        @media (max-width: 567px)
+            font-size: 24px
+            max-width: 250px
+    &-controls
+        display: flex
+        gap: 32px
+        justify-content: center
+    &__link
+        width: 120px
+        text-align: center
+        background-color: transparent
+        border: 2px solid #fff
+        color: #fff
+        text-decoration: none
+        padding: 10px 0
+        font-size: 11.77px
+        font-weight: 500
+        text-transform: uppercase
+        &--shop
+            border: none
+            background-color: $red
+            display: flex
+            align-items: center
+            justify-content: center
+
+.moneyback-part
+    margin-bottom: 20px
+
+.moneyback-description
+    font-size: 18px
+
+.moneyback-image-container
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+
+.moneyback-shipping-bg
+    @media (max-width: 768px)
+        display: none

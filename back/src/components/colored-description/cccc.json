@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_coloreddesc_ccccs",
+  "info": {
+    "displayName": "coloredParts",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "coloredPart": {
+      "type": "text"
+    },
+    "regularPart": {
+      "type": "text"
+    }
+  }
+}

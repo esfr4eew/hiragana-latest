@@ -1,0 +1,352 @@
+.categories
+    &-main
+        padding-top: 75px
+
+.sidebar
+    &-category
+        text-transform: uppercase
+        margin-bottom: 23px
+        @media (max-width: 576px)
+            margin-bottom: 12px
+        &[open] .sidebar-category__name
+            // font-weight: 500
+            &::after
+                content: url('/static/images/arrow.png')
+                position: absolute
+                left: 116px
+                top: 50%
+                transform: translateY(-50%) rotate(180deg)
+            @media (max-width: 576px)
+                &::after
+                    left: 76px
+        &--new
+            position: relative
+            &::after
+                content: 'new!'
+                position: absolute
+                top: 0
+                left: 80px
+                font-size: 12.48px
+                font-weight: bold
+                color: $red
+        &__name
+            font-size: 14.74px
+            font-weight: 500
+            margin-bottom: 23px
+            position: relative
+            cursor: pointer
+            &::after
+                content: url('/static/images/arrow.png')
+                position: absolute
+                left: 116px
+                top: 50%
+                transform: translateY(-50%)
+            @media (max-width: 576px)
+                font-size: 13px
+                margin-bottom: 10px
+                &::after
+                    left: 76px
+    &-list
+        padding-left: 10px
+        &__item
+            font-size: 16.52px
+            font-weight: 500
+            margin-bottom: 21px
+            border: none
+            background: transparent
+            text-align: left
+            display: block
+            &--active
+                font-weight: 700
+            @media (max-width: 768px)
+                font-size: 14px
+            @media (max-width: 576px)
+                font-size: 11px
+
+summary
+    display: block
+
+summary::-webkit-details-marker
+    display: none
+
+.category
+    &-sort
+        position: relative
+        margin-bottom: 30px
+        // &::after
+        //     content: url('../images/select-arrow.png')
+        //     position: absolute
+        //     left: 119px
+        //     top: 17px
+        //     z-index: -1
+        &__select
+            color: #000
+            text-decoration: none
+            appearance: none
+            border: none
+            margin-right: 12px
+            text-transform: uppercase
+            font-family: 'Blender Pro'
+            background: transparent
+            font-size: 12.13px
+            font-weight: 500
+            &--active
+                text-decoration: underline
+                color: $red
+        &__price
+            // display: flex
+            // align-items: center
+            position: relative
+        &__icon
+            width: 6px
+            position: absolute
+            right: -8px
+            top: 50%
+            transform: translateY(-50%)
+            &--rotate
+                transform: translateY(-27%) rotate(180deg)
+    &-item
+        margin-bottom: 14px
+        display: block
+        text-decoration: none
+        color: #000
+        cursor: pointer
+        position: relative
+        @media (min-width: 1200px)
+            padding: 0 15px
+        // min-width: 162px
+        &-container
+            padding: 37px
+            position: relative
+            box-shadow: -0.974px 0.225px 13px 0px rgba(0, 0, 0, 0.11)
+            margin-bottom: 15px
+            @media (max-width: 1400px)
+                padding: 32px
+            @media (max-width: 768px)
+                padding: 48px 43px
+            @media (max-width: 576px)
+                padding: 35px
+            @media (max-width: 450px)
+                padding: 27px
+        &__images
+            position: relative
+            margin-bottom: 15px
+            padding-bottom: 100%
+        &__image
+            width: 100%
+            height: 100%
+            object-fit: cover
+            position: absolute
+            top: 0
+            left: 0
+            display: none
+            &--active
+                z-index: 2
+                display: block
+        &__name
+            font-size: 18.69px
+            text-transform: uppercase
+            font-weight: 500
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            // margin-bottom: 10px
+            text-align: left
+        &__rating
+            display: flex
+            align-items: center
+            gap: 4px
+            margin-bottom: 14px
+        &__stat
+            color: #b7b7b7
+            margin-top: 5px
+        &__offer
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__oldprice
+            font-size: 15.93px
+            text-decoration: line-through
+            color: #ababab
+            font-family: 'Blender Pro Book'
+            @media (min-width: 992px)
+                font-size: 14px
+        &__prices
+            line-height: 1
+        &__price
+            font-size: 25.73px
+            color: $red
+            font-weight: 900
+            // @media (min-width: 576px)
+            //     font-size: 16px
+            @media (min-width: 992px)
+                font-size: 18px
+        &__add
+            width: 64px
+            height: 36px
+            background-color: $red
+            border: none
+            display: flex
+            align-items: center
+            justify-content: center
+            @media (max-width: 576px)
+                width: 46px
+        &__controls
+            position: absolute
+            top: 29%
+            left: 9px
+            right: 9px
+            // width: 100%
+            display: flex
+            justify-content: space-between
+            // z-index: -1
+            @media (min-width: 320px)
+                left: 5px
+                right: 5px
+            @media (min-width: 1200px)
+                left: 21px
+                right: 21px
+        &__control
+            background: transparent
+            border: none
+            width: 20px
+            cursor: pointer
+    &-link
+        display: block
+        text-decoration: none
+        color: #000
+        cursor: default
+
+.cards-pagination
+    text-align: center
+    margin: 66px 0
+    @media (max-width: 768px)
+        margin: 32px 0
+    &__item
+        color: $red
+        text-decoration: none
+        font-size: 16px
+        margin: 0 12.5px
+        display: inline-block
+        padding: 12px 15px
+        &--active
+            color: #ababab
+            background: #efefef
+
+.toBasket
+    background: green
+
+.carousel-item__prices
+    // display: flex
+    // justify-content: space-between
+    // align-items: center
+    width: 100%
+
+.carousel-item__price
+    order: -1
+
+.category-sort-button
+    border: none
+    margin-right: 18px
+    text-transform: uppercase
+    font-family: 'Blender Pro'
+    background: transparent
+    &--active
+        color: #900a0a
+        text-decoration: underline
+        display: flex
+        align-items: center
+        position: relative
+        &::after
+            content: ''
+            display: inline-block
+            width: 11px
+            height: 11px
+            background: no-repeat center/100% url("/images/arrow-up.svg")
+            transform: rotate(180deg)
+            position: absolute
+            right: -10px
+    &--asc
+        &::after
+            transform: rotate(0deg)
+.category-sort-container
+    display: flex
+    align-items: center
+
+.slider-add
+    background: $red
+    border: none
+    padding: 5px 15px
+    height: 30px
+
+.slider-cart-link
+    background: $red
+    border: none
+    display: flex
+    padding: 5px 10px
+    gap: 5px
+    text-decoration: none
+    color: #fff
+    text-transform: uppercase
+    font-weight: normal
+    height: 30px
+
+.category-cards
+    margin-bottom: 30px
+
+.recommend-item-link
+    text-decoration: none
+    color: #000
+
+.recommend-items
+    .carousel .slide
+        min-width: initial
+    .carousel .slide img
+        width: auto
+    .control-dots
+        display: none
+    .carousel.carousel-slider .control-arrow
+        display: block
+        background: black
+        opacity: 1
+
+.carousel-button-group
+    position: absolute
+    top: 50%
+    left: 0px
+    right: 0px
+    display: flex
+    justify-content: space-between
+    @media (max-width: 575px)
+        left: 15px
+        right: 15px
+
+.recommend-carousel-arrow
+    border: none
+    background: transparent
+
+.recomment-item-container
+
+.category-item-add-cart
+    color: #fff
+    font-weight: 500
+    font-size: 15.54px
+    gap: 5px
+    text-transform: uppercase
+    padding: 0 10px
+    width: 76px
+    img
+        margin-right: 5px
+
+.category-item__star
+    display: inline-block
+    width: 13px
+    height: 13px
+
+.category-star-image
+    width: 100%
+
+.category-sort__title
+    font-weight: 500
+    text-transform: uppercase
+    font-size: 11.33px

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_rating_ratings",
+  "info": {
+    "displayName": "rating",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "shop_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shop-item.shop-item"
+    },
+    "ratingValue": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "max": 5,
+      "min": 0
+    }
+  }
+}

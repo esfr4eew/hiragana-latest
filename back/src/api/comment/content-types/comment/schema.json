@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "Comment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "date": {
+      "required": true,
+      "type": "datetime"
+    },
+    "commentBody": {
+      "type": "text",
+      "required": true
+    },
+    "shop_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::shop-item.shop-item",
+      "inversedBy": "comments"
+    },
+    "comment": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::comment.comment",
+      "inversedBy": "comments"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "comment"
+    },
+    "replyTo": {
+      "type": "integer"
+    },
+    "reply": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::comment.comment",
+      "inversedBy": "replyComment"
+    },
+    "replyComment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::comment.comment",
+      "inversedBy": "reply"
+    }
+  }
+}

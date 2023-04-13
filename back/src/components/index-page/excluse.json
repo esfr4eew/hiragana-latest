@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_index_page_excluses",
+  "info": {
+    "displayName": "Exclusive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "exclusive1": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "exclusive2": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

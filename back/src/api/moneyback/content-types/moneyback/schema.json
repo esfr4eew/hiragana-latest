@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "moneybacks",
+  "info": {
+    "singularName": "moneyback",
+    "pluralName": "moneybacks",
+    "displayName": "MoneybackPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "moneybackTitle": {
+      "type": "string",
+      "default": "MONEYBACK AND RETURNS INFORMATION",
+      "required": true
+    },
+    "contactLink": {
+      "type": "string",
+      "required": true,
+      "default": "https://google.com"
+    },
+    "imageRight": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageDown": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colored-description.cccc",
+      "required": true
+    }
+  }
+}

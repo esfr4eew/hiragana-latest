@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_index_page_header_links",
+  "info": {
+    "displayName": "HeaderLinks",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "linkName": {
+      "type": "string",
+      "required": true,
+      "default": "feedback"
+    },
+    "linkUrl": {
+      "type": "string",
+      "required": true,
+      "default": "./feedback.html"
+    }
+  }
+}

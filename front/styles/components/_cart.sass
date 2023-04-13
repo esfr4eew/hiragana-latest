@@ -1,0 +1,219 @@
+.cart
+    padding-top: 75px
+    padding-bottom: 75px
+    &-item
+        box-shadow: -5.416px 7.188px 18px 0px rgba(0, 0, 0, 0.1)
+        padding: 23px 51px 28px 33px
+        margin-bottom: 15px
+        @media (max-width: 576px)
+            padding: 20px
+        &__header
+            display: flex
+            margin-bottom: 21px
+            @media (max-width: 576px)
+                flex-wrap: wrap
+                margin-bottom: 10px
+        &__footer
+            display: flex
+            justify-content: space-between
+            @media (max-width: 576px)
+                flex-wrap: wrap
+                justify-content: flex-end
+    &-good
+        display: flex
+        flex-basis: 68.8%
+        gap: 22px
+        cursor: pointer
+        @media (max-width: 576px)
+            flex-basis: 100%
+            margin-bottom: 12px
+        &__img
+            width: 98px
+            height: 98px
+            flex-shrink: 0
+            // margin-right: 22px
+        &__image
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &__name
+            max-width: 255px
+            // flex-shrink: 0
+            text-transform: uppercase
+            // margin-right: 79px
+            @media (max-width: 768px)
+                max-width: 160px
+            @media (max-width: 576px)
+                max-width: initial
+        &__title
+            font-size: 22px
+            font-weight: 900
+            color: $red
+            margin-bottom: 23px
+            @media (max-width: 768px)
+                font-size: 17px
+                margin-bottom: 17px
+        &__desc
+            font-size: 12px
+            font-weight: 500
+    &-count
+        // margin-right: 48px
+        flex-basis: 20.97%
+        &__group
+            margin-bottom: 10px
+            @media (max-width: 576px)
+                margin-right: 22px
+        &__quantity
+            width: 50px
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 18px
+            @media (max-width: 768px)
+                width: 28px
+            @media (max-width: 576px)
+                width: 62px
+        &__info
+            text-transform: uppercase
+            font-size: 12px
+            font-family: 'Blender Pro Book'
+    &-price
+        font-size: 20px
+        font-weight: 500
+        color: $red
+        @media (max-width: 768px)
+            font-size: 17px
+    &-coupon
+        display: flex
+        gap: 8px
+        flex-basis: 68.69%
+        position: relative
+        flex-wrap: wrap
+        @media (max-width: 576px)
+            flex-basis: 100%
+            margin-bottom: 10px
+        // margin-right: 166px
+        &__input
+            padding: 10px
+            width: 175px
+            height: 36px
+            border: 1px solid grey
+            font-family: 'Blender Pro Book'
+            flex-grow: 1
+            font-size: 12px
+            // margin-right: 8px
+            @media (max-width: 768px)
+                width: 134px
+                height: 27px
+            @media (max-width: 576px)
+                flex-basis: 100%
+        &__submit
+            width: 108px
+            height: 36px
+            background-color: $red
+            text-transform: uppercase
+            color: #fff
+            border: none
+            font-family: 'Blender Pro'
+            font-weight: 500
+            font-size: 12px
+            @media (max-width: 768px)
+                width: 88px
+                height: 27px
+    &__action
+        background: transparent
+        border: none
+        font-family: 'Blender Pro'
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: 500
+    &__favorites
+        // margin-right: 71px
+        flex-basis: 25.37%
+        @media (max-width: 576px)
+            flex-basis: initial
+            margin-right: 10px
+    &-total
+        box-shadow: -5.416px 7.188px 18px 0px rgba(0, 0, 0, 0.1)
+        padding: 37px 44px
+        text-transform: uppercase
+        @media (max-width: 1199px)
+            padding: 20px
+        &__calculate
+            font-size: 14px
+            font-weight: 500
+            margin-bottom: 18px
+        &__submit
+            background-color: $red
+            padding: 12px 34px
+            display: flex
+            align-items: center
+            gap: 20px
+            color: #fff
+            text-decoration: none
+            font-size: 12px
+            font-weight: 900
+            margin-top: 26px
+            max-width: 230px
+            cursor: pointer
+            @media (max-width: 992px)
+                margin-top: 15px
+    &-subtotal
+        margin-bottom: 40px
+        &__title
+            font-size: 22px
+            font-weight: 500
+        &__price
+            font-size: 22px
+            font-weight: 500
+            color: $red
+    &-form
+        display: flex
+        flex-direction: column
+        gap: 15px
+        @media (max-width: 992px)
+            flex-direction: row
+            flex-wrap: wrap
+        &__select
+            max-width: 166px
+            height: 37px
+            padding: 5px 10px
+            font-size: 12px
+            font-weight: 500
+        &__input
+            max-width: 166px
+            height: 37px
+            padding: 5px 10px
+            font-size: 12px
+            font-weight: 500
+            &::placeholder
+                text-transform: uppercase
+        &__update
+            width: 106px
+            height: 37px
+            font-size: 12px
+            font-weight: 500
+            background-color: $red
+            color: #fff
+            text-transform: uppercase
+            border: none
+            margin-bottom: 70px
+            @media (max-width: 992px)
+                margin-bottom: 25px
+
+.coupon-error-hint
+    position: absolute
+    bottom: -22px
+    color: red
+    display: none
+
+.coupon-success-icon
+    display: none
+
+.cart-good-link
+    text-decoration: none
+    display: block
+
+.coupon-error
+    color: $red
+    font-size: 12px

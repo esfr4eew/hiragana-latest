@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_items",
+  "info": {
+    "singularName": "shop-item",
+    "pluralName": "shop-items",
+    "displayName": "ShopItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true,
+      "default": "$0.00"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subcategory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subcategory.subcategory",
+      "inversedBy": "shop_items"
+    },
+    "oldprice": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "integer",
+      "required": true
+    },
+    "imageList": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "material": {
+      "type": "string",
+      "required": true
+    },
+    "hint": {
+      "type": "text",
+      "required": false
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "shop_item"
+    },
+    "popularity": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "max": 5,
+      "min": 1
+    },
+    "description": {
+      "displayName": "ColoredGoodParts",
+      "type": "component",
+      "repeatable": true,
+      "component": "colored-good-description.colored-good-parts"
+    },
+    "sizes": {
+      "displayName": "size",
+      "type": "component",
+      "repeatable": true,
+      "component": "size-component.size",
+      "required": true
+    },
+    "uid": {
+      "type": "string"
+    }
+  }
+}

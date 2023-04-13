@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_index_page_top_banners",
+  "info": {
+    "displayName": "TopBanner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "CUSTOM TITLE"
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "default": "custom desc hahvahvh"
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "shop",
+      "required": true
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "./categories.html",
+      "required": true
+    },
+    "bannerBg": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

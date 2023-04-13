@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "feedback_pages",
+  "info": {
+    "singularName": "feedback-page",
+    "pluralName": "feedback-pages",
+    "displayName": "FeedbackPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "YOU AND YOUR FRIENDS ARE ALWAYS WELCOME TO OUR SMALL SHOP (:"
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "default": "FUCK THOSE CHEAPLY MADE ITEMS FROM SHOPS WITH 1.000.000 ITEMS IN STOCK – THEY AIN’T KNOW THE GAME."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "shop",
+      "required": true
+    },
+    "buttonLink": {
+      "type": "string",
+      "default": "./categories.html",
+      "required": true
+    },
+    "bannerBg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

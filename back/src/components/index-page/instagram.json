@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_index_page_instagrams",
+  "info": {
+    "displayName": "Instagram"
+  },
+  "options": {},
+  "attributes": {
+    "instagram_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::instagram-post.instagram-post"
+    }
+  }
+}

@@ -1,0 +1,355 @@
+.good
+    &-page
+        padding-top: 75px
+        padding-bottom: 75px
+    &-preview
+        @media (max-width: 575px)
+            display: flex
+            flex-direction: column
+            gap: 22px
+            margin-bottom: 15px
+    &-info
+        @media (max-width: 575px)
+            margin-bottom: 15px
+    &__image
+        width: 100%
+        object-fit: cover
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+    &__name
+        font-size: 28.77px
+        font-weight: 900
+        max-width: 415px
+        // margin-bottom: 20px
+        @media (max-width: 1199px)
+            margin-bottom: 7px
+        @media (max-width: 992px)
+            font-size: 22px
+        @media (max-width: 768px)
+            font-size: 18px
+    &__price
+        color: $red
+        font-size: 23.96px
+        font-weight: 500
+        // margin-bottom: 33px
+        @media (max-width: 1199px)
+            // margin-bottom: 23px
+        @media (max-width: 992px)
+            font-size: 19px
+    &-img-container
+        position: relative
+        padding-bottom: 100%
+        width: 100%
+    &-form
+        margin-top: 40px
+        &__group
+            border: none
+            display: flex
+            gap: 40px
+            margin-bottom: 40px
+            @media (max-width: 1199px)
+                margin-bottom: 26px
+                gap: 20px
+            @media (max-width: 778px)
+                margin-bottom: 20px
+        &__param
+            font-size: 13.18px
+            font-weight: 500
+            text-transform: uppercase
+            margin-bottom: 7px
+            @media (max-width: 778px)
+                margin-bottom: 4px
+        &__select
+            width: 53px
+            height: 33px
+            text-align: center
+            font-family: 'Blender Pro Book'
+            @media (max-width: 778px)
+                width: 46px
+                height: 23px
+        &__quantity
+            width: 60px
+            border: none
+            border-top: 1px solid grey
+            border-bottom: 1px solid grey
+            text-align: center
+            display: flex
+            align-items: center
+            justify-content: center
+            font-family: 'Blender Pro Book'
+            @media (max-width: 778px)
+                width: 34px
+            &-group
+                display: flex
+                height: 33px
+                @media (max-width: 778px)
+                    height: 22px
+            &-action
+                background: transparent
+                border: 1px solid grey
+                width: 18px
+        &__buttons
+            @media (max-width: 992px)
+                display: flex
+                gap: 12px
+        &__button
+            width: 226px
+            height: 38px
+            text-align: center
+            background: transparent
+            border: none
+            display: flex
+            align-items: center
+            justify-content: center
+            text-transform: uppercase
+            text-decoration: none
+            font-weight: 900
+            font-size: 11.42px
+            margin-bottom: 12px
+            // @media (max-width: 992px)
+        &__buy
+            background: $red
+            color: #fff
+            cursor: pointer
+        &__add
+            border: 1px solid $red
+            color: $red
+            gap: 10px
+            margin-bottom: 37px
+            transition: all 0.2s
+            @media (max-width: 992px)
+                margin-bottom: 16px
+            @media (max-width: 778px)
+                gap: 4px
+            &-toBasket
+                background: $red
+                color: #FFF
+                border: none
+                svg
+                    fill: #fff
+    &__hint
+        text-transform: uppercase
+        color: #404040
+        font-size: 12px
+        max-width: 245px
+        font-family: "Blender Pro Book"
+    &-desc
+        font-size: 12px
+        text-transform: uppercase
+        &__item
+            margin-bottom: 20px
+            font-family: "Blender Pro Book"
+
+.thumbnails
+    display: flex
+    gap: 10px
+    margin-top: 15px
+    margin-bottom: 55px
+    @media (max-width: 992px)
+        margin-bottom: 15px
+    @media (max-width: 575px)
+        // flex-direction: column
+        margin: 0
+        gap: 10px
+    &__button
+        background: transparent
+        border: none
+        margin-bottom: 10px
+        opacity: 0.3
+        width: 78px
+        height: 78px
+        @media (max-width: 992px)
+            width: 50px
+            height: 50px
+        @media (max-width: 575px)
+            width: 62px
+            height: 62px
+        &--active
+            opacity: 1
+    &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
+        // width: 78px
+        // height: 78px
+        // @media (max-width: 992px)
+        //     width: 50px
+        //     height: 50px
+        // @media (max-width: 576px)
+        //     width: 62px
+        //     height: 62px
+
+.list-desc
+    margin: 45px 0
+    list-style-type: none
+    padding-left: 0
+    &__item
+        margin-bottom: 14px
+        position: relative
+        padding-left: 14px
+        font-family: "Blender Pro Book"
+        color: #404040
+        display: flex
+        align-items: center
+        &::before
+            content: ''
+            display: inline-block
+            width: 8px
+            height: 8px
+            background: $red
+            position: absolute
+            left: 0
+            // top: 4px
+
+.recommend
+    margin-top: 87px
+    @media (max-width: 992px)
+        margin-top: 24px
+    &-container
+        position: relative
+    &__title
+        text-align: center
+        font-size: 20.86px
+        font-weight: 500
+        margin-bottom: 30px
+    &-items
+        width: 90%
+        margin: auto
+        overflow: hidden
+        @media (max-width: 575px)
+            width: 85%
+        &__container
+            // display: flex
+            justify-content: space-between
+            // gap: 20px
+            // position: relative
+            transition: transform 0.5s
+        // overflow-x: scroll
+    &-item
+        // width: 23%
+        // min-width: 162px
+        cursor: initial
+        padding: 0
+        &-container
+            padding: 35px
+            @media (max-width: 1200px)
+                padding: 20px
+            @media (max-width: 464px)
+                padding: 35px
+    &-controls
+        &__item
+            // width: 16px
+            // height: 48px
+            position: absolute
+            top: 41%
+            @media (max-width: 992px)
+                // width: 8px
+                // height: 24px
+            &:nth-of-type(1)
+                left: 0
+                @media (max-width: 575px)
+                    left: 14px
+            &:nth-of-type(2)
+                right: 0
+                @media (max-width: 575px)
+                    right: 14px
+            img
+                width: 100%
+                height: 100%
+
+.good-rating
+    margin-bottom: 30px
+
+.good-reviews-container
+    margin-top: 60px
+
+.review-item
+    margin-bottom: 20px !important
+
+.to-category
+    text-align: center
+    margin-top: 65px
+    &-link
+        text-decoration: none
+        text-transform: uppercase
+        border: 1px solid #b7b7b7
+        color: #b7b7b7
+        padding: 16px
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+        max-width: 200px
+        margin: auto
+        &::before
+            content: ''
+            display: inline-block
+            width: 19px
+            height: 11px
+            background: no-repeat center/100% url('/images/arrow-left.svg')
+
+.good-desc-added-text
+    font-size: 12px
+    text-transform: uppercase
+    margin: 15px 0
+
+.good-desc-added-list
+    margin: 30px 0
+    list-style-type: none
+    font-size: 12px
+    text-transform: uppercase
+
+.good-desc-list-item
+    display: flex
+    align-items: center
+    &::before
+        content: ''
+        display: inline-block
+        width: 8px
+        height: 8px
+        margin-right: 7px
+        background: $red
+
+// .recommend-carousel-arrow
+//     position: absolute
+//     &--prev
+//         left: 0
+//     &--next
+//         right: 0
+
+.good-preview-container
+    position: relative
+    padding-bottom: 100%
+    width: 100%
+
+.good-form__add--active
+    color: #fff
+    background: $red
+
+.good-form-basket-icon
+    // width: 22px
+
+.recomment-wrapper
+    cursor: pointer
+
+.to-series-button
+    display: block
+    margin: 0 auto
+    background: transparent
+    border: 2px solid #b7b7b7
+    text-transform: uppercase
+    color: #b7b7b7
+    padding: 16px
+    margin-top: 20px
+    &::before
+        content: ''
+        width: 19px
+        height: 10px
+        display: inline-block
+        background: no-repeat center/100% url('/static/images/arrow-left.svg')
+        margin-right: 15px
+
+.good-form__label
+    width: auto

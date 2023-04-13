@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_colored_good_description_colored_good_parts",
+  "info": {
+    "displayName": "ColoredGoodParts",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "coloredList": {
+      "type": "text"
+    }
+  }
+}

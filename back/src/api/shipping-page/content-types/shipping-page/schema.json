@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "shipping_pages",
+  "info": {
+    "singularName": "shipping-page",
+    "pluralName": "shipping-pages",
+    "displayName": "ShippingPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shippingTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Shipping information"
+    },
+    "contactLink": {
+      "type": "string",
+      "required": true,
+      "default": "https://google.com"
+    },
+    "imageRight": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageDown": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "colored-description.cccc"
+    }
+  }
+}

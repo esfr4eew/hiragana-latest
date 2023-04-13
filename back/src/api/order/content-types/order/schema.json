@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orderId": {
+      "type": "string",
+      "required": true
+    },
+    "coupons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::coupon.coupon"
+    },
+    "Item": {
+      "displayName": "Order",
+      "type": "component",
+      "repeatable": true,
+      "component": "order-item.order",
+      "required": true
+    },
+    "totalPrice": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

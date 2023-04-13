@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_index_page_trendings",
+  "info": {
+    "displayName": "Trending"
+  },
+  "options": {},
+  "attributes": {
+    "shop_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shop-item.shop-item"
+    }
+  }
+}
