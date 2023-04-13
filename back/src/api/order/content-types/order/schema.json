@@ -31,6 +31,15 @@
     "totalPrice": {
       "type": "string",
       "required": true
+    },
+    "country": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
     }
   }
 }

@@ -89,6 +89,12 @@
       "repeatable": false,
       "component": "footer.footer",
       "required": true
+    },
+    "exlusiveLink1": {
+      "type": "string"
+    },
+    "exlusiveLink2": {
+      "type": "string"
     }
   }
 }

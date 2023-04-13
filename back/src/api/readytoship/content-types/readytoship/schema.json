@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "readytoships",
+  "info": {
+    "singularName": "readytoship",
+    "pluralName": "readytoships",
+    "displayName": "readytoship",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "addr1": {
+      "type": "string"
+    },
+    "addr2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "additional": {
+      "type": "text"
+    },
+    "contact": {
+      "type": "string"
+    }
+  }
+}
